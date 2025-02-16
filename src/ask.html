@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <nav class="fixed top-0 left-0 h-full w-48 bg-[#1A1444] p-4 pb-24">
+            <h1 class="text-white font-semibold pl-8 pt-6">clubbi</h1>
+            <ul class="flex flex-col sidebar-nav gap-24 mt-8">
+                <div>
+                    <li class="flex items-center gap-4 py-2">
+                        <div class="flex w-12 h-12 bg-white items-center justify-center rounded-full">
+                            <img src="house-icon.svg">
+                        </div>
+                        <a href="#" class="text-white">Dashboard</a>
+                    </li>
+                    <li class="flex items-center gap-4 py-2">
+                        <div class="flex w-12 h-12 items-center justify-center rounded-full">
+                            <img src="time-img.png">
+                        </div>
+                        <a href="#" class="text-white">Schedule</a>
+                    </li>
+                </div>
+                <div class="pt-60">
+                    <li class="flex items-center gap-4 py-2">
+                        <div class="flex w-12 h-12 items-center justify-center rounded-full">
+                            <img src="settings.png">
+                        </div>
+                        <a href="#" class="text-white">Settings</a>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <img src="avatar.png" class="w-12 h-12 rounded-full">
+                        <a href="#" class="text-white">Jane Doe</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <section class="flex-1 flex flex-col ml-48 md:py-8 md:px-8">
+            <div class="flex-1 flex flex-col">
+                <h5 class="mb-8">Ask anything about extracurricular activites and school clubs or use the prompts below 
+                    for extra guidnace!</h5>
+            
+            </div>
+
+                    <!-- bar  -->
+
+            <div class="w-full">
+                <div class="flex justify-center items-center w-full">
+                    <div class="flex w-full">
+                        <div class="flex-1 relative">
+                            <input 
+                                type="text" 
+                                placeholder="Ask a follow up..." 
+                                class="w-full p-4 pl-12 text-gray-600 bg-white rounded-2xl shadow-md focus:outline-none focus:ring focus:ring-gray-300"
+                            />
+                            <div class="flex gap-4 absolute left-4 top-4">
+                                <img src="add.png">
+                            </div>
+                            <div class="flex gap-4 absolute right-4 top-4">
+                                <img src="file.png">
+                                <img src="mic.png">
+                            </div>
+                        </div>
+                        <a href="ask.html" class="flex items-center">
+                            <img src="send.png" class="ml-4 w-6 h-6 object-contain">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+</body>
